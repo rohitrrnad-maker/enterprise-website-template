@@ -1,159 +1,451 @@
-# Enterprise Website Template
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://kgs-web.onrender.com/home -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahto jii</title>
 
-A modern enterprise website template built with Next.js and Tailwind CSS, supporting static site generation (SSG).
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj  - Home</title>
 
-## Technology Stack
+    <script src="./Raj Bharti - Home_files/OneSignalSDK.page.js.download" defer=""></script>
+    <script>
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+        OneSignalDeferred.push(async function(OneSignal) {
+            await OneSignal.init({
+                appId: "4e7cbc25-0a8b-4d6e-a4fa-fe38def5a191",
+                safari_web_id: "web.onesignal.auto.2bb5f943-5f36-4c5b-98f3-fab8c5252044",
+                notifyButton: {
+                    enable: true,
+                },
+            });
+        });
+    </script>
 
-- **Frontend Framework**: Next.js 15.3.1+
-- **Style Scheme**: Tailwind CSS V4
-- **UI Components**: shadcn/ui
-- **Type System**: TypeScript
-- **Code Standards**: ESLint + Prettier
+    <link href="./Raj Bharti - Home_files/icon" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fffbe7 0%, #ffe082 60%, #ffd700 100%);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: linear-gradient(90deg, #1a237e 60%, #ffd700 100%);
+            color: white;
+            padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 4px 24px rgba(255, 215, 0, 0.18);
+            position: relative;
+        }
+        
+        .logo-img {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 18px;
+            border: 3px solid #ffd700;
+            box-shadow: 0 2px 8px #ffd700a0;
+            background: #fff;
+        }
+        
+        .brand-title {
+            font-size: 2.4em;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            /* solid white */
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(255, 255, 255, 0.6);
+            display: flex;
+            align-items: center;
+        }
+        
+        .tg-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            margin-left: auto;
+        }
+        
+        .tg-logo {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: #229ED9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 8px #229ED9a0;
+            transition: transform 0.2s;
+        }
+        
+        .tg-logo img {
+            width: 28px;
+            height: 28px;
+        }
+        
+        .tg-link:hover .tg-logo {
+            transform: scale(1.1) rotate(-10deg);
+            box-shadow: 0 0 18px #229ED9;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 28px;
+            padding: 36px 20px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .grid-item {
+            background: linear-gradient(135deg, #fffde7 70%, #ffd700 100%);
+            border-radius: 18px;
+            padding: 28px 18px 22px 18px;
+            text-align: center;
+            box-shadow: 0 4px 18px #ffd70080;
+            border: 2.5px solid #ffd700;
+            transition: transform 0.22s, box-shadow 0.22s;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-8px) scale(1.03) rotate(-1deg);
+            box-shadow: 0 0 38px #ffd700b0, 0 2px 12px #1a237e33;
+            background: linear-gradient(135deg, #fffbe7 60%, #fffde7 100%);
+        }
+        
+        .material-icons {
+            font-size: 54px;
+            color: #ffd700;
+            margin-bottom: 14px;
+            text-shadow: 0 2px 8px #ffd70080;
+        }
+        
+        .grid-item h3 {
+            font-size: 1.3em;
+            color: #1a237e;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            margin: 0;
+            text-shadow: 0 2px 8px #ffd70040;
+        }
+        
+        .fav-section {
+            max-width: 1200px;
+            margin: 30px auto 0 auto;
+            background: #fffde7;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 2px 18px #ffd70040;
+            border: 2px solid #ffd700;
+        }
+        
+        .fav-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .fav-card {
+            background: #fffbe7;
+            border-radius: 10px;
+            padding: 16px;
+            width: 260px;
+            box-shadow: 0 0 6px #ffd70060;
+            cursor: pointer;
+            transition: box-shadow 0.2s, background 0.2s;
+            border: 2px solid #ffd700;
+        }
+        
+        .fav-card:hover {
+            box-shadow: 0 0 16px #ffd700b0;
+            background: #fffde7;
+        }
+        
+        .fav-title {
+            color: #1a237e;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        .modal-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.35);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            background: #fff;
+            border-radius: 10px;
+            max-width: 95vw;
+            max-height: 90vh;
+            width: 900px;
+            padding: 0;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(26, 35, 126, 0.18);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .modal-header {
+            background: #1a237e;
+            color: #fff;
+            padding: 12px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-body {
+            flex: 1;
+            overflow: auto;
+            background: #f9f9f9;
+            padding: 0;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.4em;
+            cursor: pointer;
+        }
+        
+        .back-button {
+            background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin: 0 0 20px 0;
+            box-shadow: 0 3px 8px rgba(26, 35, 126, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .back-button .material-icons {
+            font-size: 20px;
+            margin: 0;
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./Raj Bharti - Home_files/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-## Features
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-NL1TBD5YXB');
+    </script>
+<script src="./Raj Bharti - Home_files/OneSignalSDK.page.es6.js.download" defer=""></script><style id="uw-video-styles">
+      video.uw-v-8kqrv6c {
+        transform-origin: center center !important;
+        transform: var(--uw-transform) !important;
+      }
+    </style><style id="uw-global-css">.extraClassAspect { transform-origin: center center; will-change: transform; } .extraClassCrop { transform-origin: center center; will-change: transform; }</style></head>
 
-- 📱 Responsive design, perfectly adapted to various devices
-- 🎨 Modern UI design, based on the shadcn/ui component library
-- 🚀 Static site generation (SSG), excellent performance
-- 🔍 SEO friendly
-- 💻 TypeScript support, providing complete type definitions
+<body>
+    <div class="header">
+        <span class="brand-title">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUqxJObBwOqsAhNtNjaF853M1tGM8cCqndUQ&s" class="logo-img" alt="Sunny Logo">
+          🥰🥰16.Feb.2026🥰🥰 Bihar Daroga 
+        </span>
+        <a class="tg-link" href="</script>
 
-## Page List
 
-- 🏠 Homepage (`/`)
-- 📄 About Us (`/about`)
-- 🛠️ Service Introduction (`/services`)
-- 📰 News Center (`/news`)
-- 📝 Blog (`/blog`)
-- 👥 Team Introduction (`/team`)
-- 💼 Job List (`/careers`)
-- 📞 Contact Us (`/contact`)
-- 🚀 Get Started (`/get-started`)
+</body></html>" target="_blank" title="Join Telegram">
+            <span class="tg-logo">
+                <img src="./Raj Bharti - Home_files/2111646.png" alt="TG">
+            </span>
+        </a>
+    </div>
 
-## Quick Start
+    <div class="grid-container" id="mainGrid">
+        <div class="grid-item" onclick="location.href=&#39;/batches&#39;">
+            <span class="material-icons">..Physics.. </span>
+             <a href="https://www.youtube.com/embed/9Pq4cG3K5xA">open Link</a> </p>
+            <h3> </h3>
+        </div>
+         <div class="grid-item" onclick="location.href=&#39;/test-series&#39;">
+            <span class="material-icons">...history... </span>
+             <a href="https://www.youtube.com/embed/cRMJ2Nk1MF4">open Link</a> </p>
+            <h3></h3>
+        </div>
+        <div class="grid-item" onclick="location.href=&#39;/test-series&#39;">
+            <span class="material-icons">..statics...   </span>
+             <a href="https://www.youtube.com/embed/Ussjhs9S76I">open Link</a> </p>
+            <h3></h3>
+        </div>
+        <div class="grid-item" onclick="window.open()">
+            <span class="material-icons">Reasoning</span>
+             <a href="https://www.youtube.com/embed/hv7YEYP1Fnc">open Link</a> </p>
+            <h3></h3>
+        </div>
+        <div class="grid-item" onclick="window.open()">
+            <span class="material-icons">geography</span>
+             <a href="https://www.gettyimages.in/illustrations/close-sign">open Link</a> </p>
+            <h3></h3>
+            </div>
+        <div class="grid-item" onclick="window.open(https://www.youtube.com/embed/tq97ATLfW3Q)">
+            <span class="material-icons">All</span>
+            <h3>NCERT Books</h3>
+        </div>
+         <div class="grid-item" onclick="window.open()">
+            <span class="material-icons">.telegram .</span>
+             <a href="https://youtu.be/eJTOIAVNijc?list=RDpEh_2kDfu2w">open Link</a> </p>
+            <h3></h3>
+            </div>
+        
+        
+  
+        </div>
+    </div>
 
-1. **Clone the project**
+    <div class="fav-section" id="favSection" style="display:none;">
+        <button onclick="hideFavourites()" class="back-button">
+            <span class="material-icons">arrow_back</span>
+            Back to Home
+        </button>
+        <h2>Favourite Batches</h2>
+        <div class="fav-list" id="favList"></div>
+    </div>
 
-```bash
-git clone [project address]
-cd [project directory]
-```
+    <div id="modalView" style="display:none;"></div>
 
-2. **Install dependencies**
+    <!-- ✅ Popup Section -->
+    <div id="popupOverlay" style="position: fixed; inset: 0px; background: rgba(0, 0, 0, 0.4); z-index: 2000; display: none; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.4s;">
 
-```bash
-npm install
-# or
-yarn install
-```
+        <div id="popupContent" style="background: linear-gradient(135deg, rgb(106, 17, 203), rgb(37, 117, 252)); color: white; border-radius: 15px; padding: 25px 20px; text-align: center; width: 85%; max-width: 350px; position: relative; box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px; transform: scale(0.8); transition: transform 0.4s;">
 
-3. **Start the development server**
+            <button onclick="closePopup()" style="position:absolute; top:10px; right:15px; background:white; border:none; 
+            color:#ff4d4d; font-size:22px; font-weight:bold; cursor:pointer; width:35px; height:35px; 
+            border-radius:50%; display:flex; align-items:center; justify-content:center; 
+            box-shadow:0 3px 8px rgba(0,0,0,0.2); transition: transform 0.2s ease;">×</button>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+            <img src="./Raj Bharti - Home_files/2111646.png" width="70" height="70" style="margin-bottom:12px;">
+            <h2 style="margin-bottom:8px;">Join Our gram Channel!</h2>
+            <p style="color:#e0e0e0; margin-bottom:18px;">Stay updated with latest updates and new Class  links per Day .</p>
+            <a href="https://t.me/+xfeMDpDv5O9jNzdl" target="_blank" style="background:#ff6b81; color:white; text-decoration:none; padding:12px 28px; 
+            border-radius:10px; font-weight:bold; display:inline-block; transition: background 0.3s ease;">JOIN NOW</a>
+        </div>
+    </div>
 
-4. **Build the production version**
 
-```bash
-npm run build
-# or
-yarn build
-```
+    <script>
+        // ---- Auto Fullscreen without any popup ----
+        window.addEventListener("load", () => {
+            const docEl = document.documentElement;
+            if (docEl.requestFullscreen) {
+                docEl.requestFullscreen().catch(() => {});
+            } else if (docEl.webkitRequestFullscreen) {
+                docEl.webkitRequestFullscreen();
+            } else if (docEl.msRequestFullscreen) {
+                docEl.msRequestFullscreen();
+            }
+        });
 
-## Integrating with CMS(Optional)
+        // Show popup after 1.5 seconds
+        window.onload = function() {
+            setTimeout(() => {
+                openPopup();
+            }, 500);
+        };
 
-The project provides a script to integrate with Contentful CMS, which can pull blog data from Contentful to Markdown.
+        function openPopup() {
+            const overlay = document.getElementById('popupOverlay');
+            const content = document.getElementById('popupContent');
+            overlay.style.display = 'flex';
+            // Force reflow for transition
+            void overlay.offsetWidth;
+            overlay.style.opacity = '1';
+            content.style.transform = 'scale(1)';
+        }
 
-The project provides a data structure that can be directly [imported](https://www.contentful.com/developers/docs/tutorials/cli/import-and-export/) into Contentful:
-`contentful space import --content-file contentful-export.json --space-id ${your-space-id}`
+        function closePopup() {
+            const overlay = document.getElementById('popupOverlay');
+            const content = document.getElementById('popupContent');
+            overlay.style.opacity = '0';
+            content.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+                overlay.style.display = 'none';
+            }, 400); // Match transition duration
+        }
 
-Configure environment variables locally:
+        // Favourite courses
+        function showFavourites() {
+            const favs = JSON.parse(localStorage.getItem('favouriteCourses') || '[]');
+            const favList = document.getElementById('favList');
+            if (favs.length === 0) {
+                favList.innerHTML = '<p>No favourite batches yet.</p>';
+            } else {
+                favList.innerHTML = favs.map(batch => `
+                <div class="fav-card" onclick="window.location.href='/batch/${batch.id}'" style="margin-bottom:16px;cursor:pointer;">
+                    <div class="fav-title" style="font-weight:bold;margin-bottom:6px;">${batch.title}</div>
+                    <img src="${batch.image_large}" alt="${batch.title}" style="width:100%;border-radius:6px;">
+                    <div style="font-size:0.95em;color:#555;margin-top:6px;">Start: ${new Date(batch.start_at).toLocaleDateString()}</div>
+                </div>
+            `).join('');
+            }
+            document.getElementById('mainGrid').style.display = 'none';
+            document.getElementById('favSection').style.display = 'block';
+        }
 
-```
-CONTENTFUL_SPACE_ID=Contentful Space ID
-CONTENTFUL_DELIVERY_TOKEN=Contentful API Key
-CONTENTFUL_PREVIEW_TOKEN=Contentful Preview Key
-DEV=true
-NEXT_PUBLIC_FORMSPREE_ID=Formspree Form ID for Contact Us submissions
-```
+        function hideFavourites() {
+            document.getElementById('favSection').style.display = 'none';
+            document.getElementById('mainGrid').style.display = 'grid'; // Agar grid tha pehle
+        }
 
-## Project Structure
+        /* 
+        <!-- 
+               document.addEventListener("DOMContentLoaded", () => {
+                      const enableFullscreen = async () => {
+                             const elem = document.documentElement;
 
-```
-├── public/          # Static resources
-├── src/
-│   ├── components/  # Components
-│   │   ├── cards/   # Card components
-│   │   ├── layouts/ # Layout components
-│   │   └── ui/      # UI components
-│   ├── config/      # Configuration files
-│   ├── pages/       # Pages
-│   └── styles/      # Style files
-├── .eslintrc.js    # ESLint configuration
-├── .prettierrc     # Prettier configuration
-├── next.config.js  # Next.js configuration
-└── tailwind.config.js # Tailwind configuration
-```
+                             if (elem.requestFullscreen) {
+                                    await elem.requestFullscreen();
+                             } else if (elem.webkitRequestFullscreen) {
+                                    await elem.webkitRequestFullscreen();
+                             } else if (elem.msRequestFullscreen) {
+                                    await elem.msRequestFullscreen();
+                             }
 
-## Configuration File Explanation
+                             document.removeEventListener("click", enableFullscreen);
+                             document.removeEventListener("touchstart", enableFullscreen);
+                             document.removeEventListener("mousemove", enableFullscreen);
+                      };
 
-The project uses multiple configuration files to manage data:
+                      // Trigger fullscreen as soon as the user interacts
+                      document.addEventListener("click", enableFullscreen);
+                      document.addEventListener("touchstart", enableFullscreen);
+                      document.addEventListener("mousemove", enableFullscreen);
+               });
+        -->
+        */
+  </script>
 
-- `config/articles.ts`: Blog article data
-- `config/careers.ts`: Job information
-- `config/get-started.ts`: Quick start guide
-- `config/team.ts`: Team member information
 
-## Development Guidelines
-
-### Component Development Standards
-
-1. Develop all components using TypeScript
-2. Use PascalCase for component naming
-3. Ensure proper Props type definitions are added
-4. Follow the project's established style guidelines
-
-### Style Development Standards
-
-1. Prioritize using Tailwind CSS class names
-2. Follow responsive design principles
-3. Maintain consistency in color and spacing
-
-### Page Development Standards
-
-1. Use the MainLayout component as the page layout
-2. Implement appropriate SEO optimization
-3. Ensure responsive performance on pages
-
-## Deployment Instructions
-
-The project uses static site generation (SSG), which can be deployed to any static hosting service:
-
-1. Build the project:
-
-```bash
-npm run build
-```
-
-2. The generated static files are located in the `out` directory
-
-3. Deploy the `out` directory to your hosting service
-
-## Contribution Guidelines
-
-1. Fork the project
-2. Create a feature branch
-3. Submit changes
-4. Push to the branch
-5. Create a Pull Request
-
-## License
-
-[MIT License](https://github.com/TencentEdgeOne/enterprise-website-template/blob/main/LICENSE)
-
-## Deploy
-
-[![Deploy with EdgeOne Pages](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://console.tencentcloud.com/edgeone/pages/new?template=enterprise-website-template)
+</body></html>
