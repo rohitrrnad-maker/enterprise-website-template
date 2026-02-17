@@ -1,0 +1,113 @@
+
+
+<body>
+    <div class="background">
+        <canvas id="matrix"></canvas>
+        <div class="particles" id="particles-js"></div>
+    </div>
+                
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="_E1BB2B5D-FD09-4904-AF78-893A39FA2E1D_-removebg-preview.png" alt="AS Multiverse" class="nav-logo-img">
+                <span class="nav-logo-text">Raj Bhai</span>
+                </div>
+            <div class="nav-links">
+                <a href="/index.html" class="nav-link active">Home</a>
+                <a href="#batches" class="nav-link">My Batches</a>
+                <a href="#about" class="nav-link">About</a>
+                </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                </div>
+        <div class="mobile-menu">
+            <a href="/index.html" class="mobile-nav-link active">Home</a>
+            <a href="#batches" class="mobile-nav-link">My Batches</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+        </div>
+    </nav>
+         <div class="search-and-filters">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input id="searchInput" placeholder="Search Batches...">
+                    </div>
+                </div>
+            <div class="filter-buttons">
+                <button class="" data-filter="all">Bihar Daroga </button>
+               
+                </div>
+            </div>
+            
+            <!-- Loading Indicator -->
+            <div id="loadingIndicator" class="loading-indicator" style="display:none;">
+                <div class="loading-spinner"></div>
+                <div class="loading-text">Loading Batches...</div>
+            </div>
+                
+            <!-- Batches Grid -->
+            <div class="batches-grid" id="batchesGrid">
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Geography By Amit shree sir</h2>
+                 <div class="card">
+            <a href="https://sparkling-violet-mq22ggrw1g-jxu25nx89c.edgeone.app/">Let`s Study</a>
+        </div>
+        <h2>History By Sunami sir</h2>
+                 <div class="card">
+            <a href="fle:///C:/Users/pc/Desktop/History.htmli">Let`s Study</a>
+        </div>
+        <h2>Current Affairs By S.K Chaudhary sir</h2>
+                 <div class="card">
+            <a href="">Let`s Study</a>
+        </div>
+        <h2>Polity By Khan Sir</h2>
+                 <div class="card">
+            <a href="">Let`s Study</a>
+        </div>
+    
+    <section id=contact class=contact-section>
+        <div class=container>
+            <div class=contact-content>
+                <h2>Get In Touch</h2>
+                <p>Join our community and stay updated with the latest releases</p>
+                <div class=contact-links>
+                    <a href=https://whatsapp.com/channel/0029Vb7P5BEGZNCzg5YyMl2j class=contact-link>
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp Channel</span>
+                    </a>
+                    <a href=https://t.me/+uw0dldSW_WlhNDc1class =contact-link>
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram Channel</span>
+                    </a>
+                    <a href=https://www.instagram.com/hub.9study?igsh=a29ramI3dDJjNmpy class=contact-link>
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href=http://www.youtube.com/@rajbhaipranksboys4742 class=contact-link>
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+          await loadBatchesFromAPI();
+        });
+    </script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "990e4a5e0cbd45109d46bae4ff00eb89"}'></script><!-- Cloudflare Pages Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"6e2f5ac2d4c14d3dba239dee8fdc4fec","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
